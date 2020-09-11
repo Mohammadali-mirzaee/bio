@@ -1,15 +1,16 @@
 body {
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  grid-template-areas: 
-  "header header header"
-  "main seats main"
-  "footer footer footer";
-  grid-template-rows: 0.1fr 1fr 0.1fr;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
+	height: 100vh;
+	display: grid;
+	margin: 0;
+	grid-template-areas:
+		'header header header'
+		'main main main'
+		'footer footer footer';
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr 1fr 0.1fr;
 }
 
+<<<<<<< HEAD
 #ticketsMain {
   flex-grow: 1;
   grid-area: seats;
@@ -20,3 +21,38 @@ body {
   flex-grow: 1;
   background-color: blue;
 }
+=======
+
+	#ticketsMain {
+		grid-area: main;
+    display: grid;
+    padding: 2%;
+    margin: 0;
+    gap: 2px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #D6D6D6;
+  }
+  
+  .seat {
+    background-color: #2A2623;
+    display: inline-grid;
+    border-radius: 5px;
+  }
+  .seat:hover .seatInfo{
+    display: unset;
+  }
+
+  .seatInfo {
+    display: none;
+    font-size: 0.65rem;
+    color: #D6D6D6;
+    text-align: center;
+  }
+  .seatInfo button {
+    align-self: center;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+>>>>>>> b58c5ca8b7806bd3595453d22d354b89dd1db6bf

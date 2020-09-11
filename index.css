@@ -5,11 +5,28 @@ body {
 }
 #homeMain {
 	background-color: #ebebeb;
+<<<<<<< HEAD
 	margin: 0;
+=======
+  color: #353531;
+  grid-area: main;
+  margin: 0;
+  padding: 20px;
+	display: flex;
+	flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+>>>>>>> b58c5ca8b7806bd3595453d22d354b89dd1db6bf
 }
 #homeMain h1 {
 	color:black;
 	font-family: 'PT Sans', sans-serif;
+}
+#homeMain img {
+  display: flex;
+  flex: 100%;
+  height: 80%;
+  margin: 0;
 }
 #footer {
 	margin: 0;
@@ -17,6 +34,7 @@ body {
 	background-color: #d6d6d6;
 }
 
+/* Header responsiv Start */
 @media screen and (max-width: 600px) {
 	body {
 		grid-template-areas:
@@ -62,6 +80,9 @@ body {
 
 	}
 }
+/*Header responsiv end */
+
+/*Responsiv Code Start */
 
 @media screen and (min-width: 600px) {
 	body {
@@ -78,6 +99,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		height: 150px;
 		background-image: url(images/header.jpg);
 	}
 
@@ -91,7 +113,7 @@ body {
 
 	.foot-info{
 		display: flex;
-		background-color: black;
+		background-color: #110a38;
 		height: 200px;
 		align-items: center;
 		justify-content: center;
@@ -100,6 +122,14 @@ body {
 	.foot-info li a{
 		color: whitesmoke;
 		text-decoration:none;
+	}
+	.foot-info h2{
+		text-align: center;
+		color: antiquewhite;
+	}
+	.copy-right{
+		background-color: #120d2e;
+		height: 80px;
 	}
 
 	.meny {
@@ -121,6 +151,7 @@ body {
 		margin: 0;
 	}
 }
+/*Responsiv Code End */
 
 /* Galleri css Start*/
 #galleri-body{

@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "main seats main"
+  "footer footer footer";
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+#ticketsMain {
+  display: flex;
+  flex-grow: 1;
+  grid-area: seats;
+}
+
+#seats {
+  display: flex;
+  flex-grow: 1;
+  background-color: blue;
+}

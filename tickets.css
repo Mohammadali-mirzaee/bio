@@ -10,18 +10,6 @@ body {
 	grid-template-rows: 0.2fr 1fr 0.1fr;
 }
 
-<<<<<<< HEAD
-#ticketsMain {
-  flex-grow: 1;
-  grid-area: seats;
-}
-
-#seats {
-  
-  flex-grow: 1;
-  background-color: blue;
-}
-=======
 
 	#ticketsMain {
 		grid-area: main;
@@ -55,4 +43,3 @@ body {
     border-radius: 4px;
     text-decoration: none;
   }
->>>>>>> b58c5ca8b7806bd3595453d22d354b89dd1db6bf

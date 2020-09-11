@@ -5,9 +5,6 @@ body {
 }
 #homeMain {
 	background-color: #ebebeb;
-<<<<<<< HEAD
-	margin: 0;
-=======
   color: #353531;
   grid-area: main;
   margin: 0;
@@ -16,7 +13,6 @@ body {
 	flex-flow: row wrap;
   justify-content: center;
   align-content: flex-start;
->>>>>>> b58c5ca8b7806bd3595453d22d354b89dd1db6bf
 }
 #homeMain h1 {
 	color:black;
@@ -24,7 +20,8 @@ body {
 }
 #homeMain img {
   display: flex;
-  flex: 100%;
+	/* flex: 100%; */
+	width: 100%;
   height: 80%;
   margin: 0;
 }
@@ -197,7 +194,6 @@ body {
 	margin-top: 300px;
 	background-color: transparent;
 	border-radius: 50px;
-<<<<<<< Updated upstream
 	border: none;
 	font-size: 20px;
 	top: 0;
@@ -213,11 +209,8 @@ background-color:#2A2623;
 	margin-left: 40px;
 }
 
-=======
-}
 .swipe-btn:hover{
 background-color: violet;
 
 }
->>>>>>> Stashed changes
 /*galleri css end */ 

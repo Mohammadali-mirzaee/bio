@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 #homeMain {
-	/* background-color: #ebebeb;
+	background-color: #ebebeb;
   color: #353531;
   grid-area: main;
   margin: 0;
@@ -12,16 +12,17 @@ body {
 	display: flex;
 	flex-flow: row wrap;
   justify-content: center;
-  align-content: flex-start; */
-
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
 }
 #homeMain h1 {
 	color:black;
 	font-family: 'PT Sans', sans-serif;
+}
+#homeMain img {
+  display: flex;
+  flex: 100%;
+  height: 80%;
+  margin: 0;
 }
 #footer {
 	margin: 0;

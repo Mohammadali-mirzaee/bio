@@ -11,13 +11,12 @@ body {
 }
 
 #ticketsMain {
-  display: flex;
   flex-grow: 1;
   grid-area: seats;
 }
 
 #seats {
-  display: flex;
+  
   flex-grow: 1;
   background-color: blue;
 }

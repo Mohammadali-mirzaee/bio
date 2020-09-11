@@ -197,6 +197,7 @@ body {
 	margin-top: 300px;
 	background-color: transparent;
 	border-radius: 50px;
+<<<<<<< Updated upstream
 	border: none;
 	font-size: 20px;
 	top: 0;
@@ -212,4 +213,11 @@ background-color:#2A2623;
 	margin-left: 40px;
 }
 
+=======
+}
+.swipe-btn:hover{
+background-color: violet;
+
+}
+>>>>>>> Stashed changes
 /*galleri css end */ 

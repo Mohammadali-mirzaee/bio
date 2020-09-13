@@ -116,9 +116,13 @@ background-color: #0D1821;
 		justify-content: center;
 		justify-content: space-around;
 	}
+	.foot-info li {
+		list-style-type: none;
+
+	}
 	.foot-info li a{
 		color: whitesmoke;
-		text-decoration:none;
+		text-decoration: none;
 	}
 	.foot-info h2{
 		text-align: center;
@@ -246,3 +250,20 @@ background-color: #2A2623;
 
 }
 /*galleri css end */ 
+
+/*Start the Form Css*/
+#about-body{
+background-color: #3B5998;
+}
+.container{
+	display: flex;
+}
+.contain-info{
+
+	order: 5;
+}
+.form-about{
+	background-color: #0D1821;
+}
+
+/*End the Form Css*/

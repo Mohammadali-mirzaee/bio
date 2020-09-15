@@ -1,4 +1,4 @@
-body {
+#home-body {
 	height: 100vh;
 	display: grid;
 	margin: 0;
@@ -9,15 +9,16 @@ background-color: #0D1821;
   grid-area: main;
   margin: 0;
   padding: 20px;
-	display: flex;
-	flex-flow: row wrap;
+display: flex;
+flex-flow: row wrap;
   justify-content: center;
   align-content: flex-start;
   height: 800px;
 }
 #homeMain h1 {
 	color:whitesmoke;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Cairo', sans-serif;
+
 }
 #homeMain img {
   display: flex;
@@ -25,15 +26,10 @@ background-color: #0D1821;
   height: 80%;
   margin: 0;
 }
-#footer {
-	margin: 0;
-	border-top: 0.5px solid #d6d6d6;
-	background-color: #d6d6d6;
-}
 
 /* Header responsiv Start */
 @media screen and (max-width: 600px) {
-	body {
+	#home-body {
 		grid-template-areas:
 			'header header'
 			'main main'
@@ -79,10 +75,105 @@ background-color: #0D1821;
 }
 /*Header responsiv end */
 
+
+/*Footer start */
+#footer {
+	margin: 0;
+	border-top: 0.5px solid #d6d6d6;
+	background-color: #d6d6d6;
+	grid-area: footer;
+
+}
+.foot-info{
+	display: flex;
+	background-color: #1c2a36;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+}
+.foot-info li {
+	list-style-type: none;
+
+}
+.foot-info li a{
+	color: whitesmoke;
+	text-decoration: none;
+	font-family: 'Cairo', sans-serif;
+	font-size: small;
+}
+.foot-info h2{
+	text-align: center;
+	color: antiquewhite;
+	font-family: 'Cairo', sans-serif;
+}
+.copy-right{
+	background-color: #242f38;
+	height: 100px;
+	width: 100%;
+}
+#sociala-medier{
+	text-align: center;
+}
+.search{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*footer end */
+
+@media screen and (max-width:576px){
+
+	#footer {
+		margin: 0;
+		border-top: 0.5px solid #d6d6d6;
+		background-color: #d6d6d6;
+		grid-area: footer;
+	
+	}
+	#footer h2 {
+		line-height: 24px;
+		margin: 0;
+	}
+	.personal-info{
+		display: none;
+	}
+
+}
+
+
 /*Responsiv Code Start */
 
 @media screen and (min-width: 600px)  {
-	body {
+	#home-body {
 		grid-template-areas:
 			'header header header'
 			'main main main'
@@ -103,79 +194,22 @@ background-color: #0D1821;
 	#homeMain {
 		grid-area: main;
 	}
-	/*Footer start */
-	#footer{
-		grid-area: footer;
-	}
-
-	.foot-info{
-		display: flex;
-		background-color: #110a38;
-		height: 200px;
-		align-items: center;
-		justify-content: center;
-		justify-content: space-around;
-	}
-	.foot-info li {
-		list-style-type: none;
-
-	}
-	.foot-info li a{
-		color: whitesmoke;
-		text-decoration: none;
-	}
-	.foot-info h2{
-		text-align: center;
-		color: antiquewhite;
-	}
-	.copy-right{
-		background-color: #120d2e;
-		height: 100px;
-	}
-	#sociala-medier{
-		text-align: center;
-	}
-	.fa {
-  	padding: 20px;
-  	font-size: 30px;
-  	width: 50px;
-  	text-align: center;
-	text-decoration: none;
-	}
-	.fa:hover {
-  	opacity: 0.7;
-	}
-	.fa-facebook {
-  	background: #3B5998;
- 	 color: white;
-	}
-	.fa-twitter {
-  	background: #55ACEE;
-  	color: white;
-	}
-	.fa-instagram {
-  	background: #125688;
-  	color: white;
-	}
-	.fa-youtube {
-  	background: #bb0000;
-  	color: white;
-	}
-
-	/*footer end */
-
+	
 	.meny {
 		display: flex;
 		flex-grow: 1;
 		flex-direction: row;
 		align-items: flex-end;
 		list-style-type: none;
+		justify-content: center;
 	}
 	.meny li a {
-		color: white;
+		color: whitesmoke;
 		text-decoration: none;
 		margin: 10px;
-		font-size: large;
+		font-size: 20px;
+		font-family: 'Cairo', sans-serif;
+
 	}
 	#navbar {
 		grid-area: nav;
@@ -253,17 +287,54 @@ background-color: #2A2623;
 
 /*Start the Form Css*/
 #about-body{
-background-color: #3B5998;
+	background-color: #0D1821;
+
 }
 .container{
 	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 .contain-info{
-
-	order: 5;
+	background-color: #ccc;
+	width: 300px;
+	margin: 10%;
+	height: 250px;
+	text-align: center;
+}
+.profile-left{
+	height: 80px;
+	width: 80px;
+	border-radius: 25%;
+	align-items: center;
+	margin: auto;
+	background-image: url(images/profile/profile1.png);
+	background-position: center;
+	background-size: cover;
+}
+.profile-center{
+	height: 80px;
+	width: 80px;
+	border-radius: 25%;
+	align-items: center;
+	margin: auto;
+	background-image: url(images/profile/profile2.png);
+	background-position: center;
+	background-size: cover;
+}
+.profile-right{
+	height: 80px;
+	width: 80px;
+	border-radius: 25%;
+	align-items: center;
+	margin: auto;
+	background-image: url(images/profile/profile3.jpg);
+	background-position: center;
+	background-size: cover;
 }
 .form-about{
 	background-color: #0D1821;
+	
 }
 
 /*End the Form Css*/

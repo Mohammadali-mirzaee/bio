@@ -33,10 +33,10 @@ body {
 .seat-info {
 	flex-grow: 1;
 	font-size: 0.7rem;
-	color: #d6d6d6;
   text-align: center;
   border: 1px solid #f2e3bc;
 	border-radius: 5px;
+	color: #d6d6d6;
 	color: #f2e3bc;
 }
 .seat-info button {

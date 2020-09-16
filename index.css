@@ -86,16 +86,13 @@ input[type='checkbox'] {
 		color: #fff;
 	}
 
-	/**
-	Hide the checkbox itself. Checking and unchecking 
-	it we will be done via the label element.
-*/
+	/* Gömmer alla checkbox-element */
 
 	input[type='checkbox'] {
 		display: none;
 	}
 
-	/* Click to expand button */
+	/* Ändrar label så den ser ut som en knapp */
 
 	label {
 		box-sizing: border-box;
@@ -138,7 +135,7 @@ input[type='checkbox'] {
 		text-decoration: none;
 	}
 
-	/* Kollar om en checkbox är 'checked', byter då färg på label och visar ul, skulle nog använda klass eller id, men vi använder inte ul på något annat ställe */
+	/* Kollar om en checkbox är 'checked', byter då färg på label och visar ul */
 	input[type='checkbox']:checked ~ label {
 		background-color: #3d88bd;
 	}

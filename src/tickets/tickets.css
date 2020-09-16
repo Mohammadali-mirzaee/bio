@@ -1,3 +1,4 @@
+/* Baseras på mobile width - under 600px */
 body {
 	height: 100vh;
 	display: grid;
@@ -6,40 +7,58 @@ body {
 		'header header header'
 		'main main main'
 		'footer footer footer';
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1.2fr 1fr;
 	grid-template-rows: 0.2fr 1fr 0.1fr;
+	background-color: #0d1821;
+}
+/* Styr main-elementet */
+#tickets-main {
+	grid-area: main;
+	display: grid;
+	gap: 2px;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	padding: 2%;
 }
 
+.seat {
+	background-color: #748386;
+	display: inline-flex;
+	border-radius: 5px;
+}
+.seat:hover .seat-info {
+	display: unset;
+}
 
+.seat-info {
+	flex-grow: 1;
+	font-size: 0.7rem;
+	color: #d6d6d6;
+  text-align: center;
+  border: 1px solid #f2e3bc;
+	border-radius: 5px;
+	color: #f2e3bc;
+}
+.seat-info button {
+	align-self: center;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.seat-info button:visited {
+	border-radius: 4px;
+}
+
+/* Media query, döljer texten i seat-info när det är fullscreen, hover visar texten */
+@media screen and (min-width: 600px) {
 	#tickets-main {
-		grid-area: main;
-    display: grid;
-    padding: 2%;
-    margin: 0;
-    gap: 2px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    background-color: #0D1821;
-  }
-  
-  .seat {
-    background-color: #2A2623;
-    display: inline-grid;
-    border-radius: 5px;
-  }
-  .seat:hover .seat-info{
-    display: unset;
-  }
+		padding-top: 20px;
+		padding-left: 200px;
+		padding-right: 200px;
+		padding-bottom: 20px;
+	}
 
-  .seat-info {
-    display: none;
-    font-size: 0.65rem;
-    color: #D6D6D6;
-    text-align: center;
-  }
-  .seat-info button {
-    align-self: center;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-  }
+	.seat-info {
+		display: none;
+	}
+}

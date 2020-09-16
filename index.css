@@ -86,6 +86,7 @@ flex-flow: row wrap;
 }
 .foot-info{
 	display: flex;
+	flex-grow: 1;
 	background-color: #1c2a36;
 	height: 200px;
 	align-items: center;

@@ -1,30 +1,32 @@
+input[type='checkbox'] {
+	display: none;
+}
 #home-body {
 	height: 100vh;
 	display: grid;
 	margin: 0;
 }
 #home-main {
-background-color: #0D1821;
-  color: #353531;
-  grid-area: main;
-  margin: 0;
-  padding: 20px;
-display: flex;
-flex-flow: row wrap;
-  justify-content: center;
-  align-content: flex-start;
-  height: 800px;
+	background-color: #0d1821;
+	color: #353531;
+	grid-area: main;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+	height: 800px;
 }
 #home-main h1 {
-	color:whitesmoke;
+	color: whitesmoke;
 	font-family: 'Cairo', sans-serif;
-
 }
 #home-main img {
-  display: flex;
+	display: flex;
 	width: 100%;
-  height: 80%;
-  margin: 0;
+	height: 80%;
+	margin: 0;
 }
 
 /* Header responsiv Start */
@@ -70,11 +72,83 @@ flex-flow: row wrap;
 		text-decoration: none;
 		margin: 10px;
 		font-family: 'PT Sans', sans-serif;
-
 	}
 }
 /*Header responsiv end */
 
+/* Navbar om screen width är under 600 */
+@media screen and (max-width: 600px) {
+	/* Dropdown */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	/**
+	Hide the checkbox itself. Checking and unchecking 
+	it we will be done via the label element.
+*/
+
+	input[type='checkbox'] {
+		display: none;
+	}
+
+	/* Click to expand button */
+
+	label {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 100%;
+		background-color: #05334c;
+		padding: 15px 20px;
+
+		cursor: pointer;
+		text-align: center;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+	
+	ul {
+		position: absolute;
+		list-style: none;
+		text-align: left;
+		width: 100%;
+		z-index: 1;
+		margin: 0;
+		padding: 0;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+		display: none;
+	}
+
+	ul li {
+		padding: 15px;
+		background-color: #748386;
+		margin-bottom: 1px;
+		cursor: pointer;
+	}
+
+	ul li:hover {
+		background-color: #4fb9a7;
+		color: #fff;
+	}
+
+	ul a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* Kollar om en checkbox är 'checked', byter då färg på label och visar ul, skulle nog använda klass eller id, men vi använder inte ul på något annat ställe */
+	input[type='checkbox']:checked ~ label {
+		background-color: #3d88bd;
+	}
+
+	input[type='checkbox']:checked ~ ul {
+		display: block;
+	}
+}
+
+/* Dropdown end */
 
 /*Footer start */
 #footer {
@@ -82,9 +156,8 @@ flex-flow: row wrap;
 	border-top: 0.5px solid #d6d6d6;
 	background-color: #d6d6d6;
 	grid-area: footer;
-
 }
-.foot-info{
+.foot-info {
 	display: flex;
 	flex-grow: 1;
 	background-color: #1c2a36;
@@ -95,95 +168,102 @@ flex-flow: row wrap;
 }
 .foot-info li {
 	list-style-type: none;
-
 }
-.foot-info li a{
+.foot-info li a {
 	color: whitesmoke;
 	text-decoration: none;
 	font-family: 'Cairo', sans-serif;
 	font-size: small;
 }
-.foot-info h2{
+.foot-info h2 {
 	text-align: center;
 	color: antiquewhite;
 	font-family: 'Cairo', sans-serif;
 }
-.copy-right{
+.copy-right {
 	background-color: #242f38;
 	height: 100px;
 	width: 100%;
 }
-#sociala-medier{
+#sociala-medier {
 	text-align: center;
 }
-.search{
+.search {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
-.input{
+.input {
 	background: #ccc;
 	border: none;
 	width: 180px;
 }
-.swipe-btn{
+.swipe-btn {
 	font-family: 'Cairo', sans-serif;
 	color: black;
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-text-decoration: none;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
 }
 .fa:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+	background: #3b5998;
+	color: white;
 }
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+	background: #55acee;
+	color: white;
 }
 .fa-instagram {
-  background: #125688;
-  color: white;
+	background: #125688;
+	color: white;
 }
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+	background: #bb0000;
+	color: white;
 }
 
 /*footer end */
 
-@media screen and (max-width:576px){
-
+@media screen and (max-width: 576px) {
 	#footer {
 		margin: 0;
 		border-top: 0.5px solid #d6d6d6;
 		background-color: #d6d6d6;
 		grid-area: footer;
-	
 	}
 	#footer h2 {
 		line-height: 24px;
 		margin: 0;
 	}
-	.personal-info{
+	.personal-info {
 		display: none;
 	}
-
 }
 
+/* Navbar, width större än 600px */
+@media screen and (min-width: 600px) {
+	#checkbox-toggle-label {
+		display: none;
+	}
+	ul li {
+		padding: 15px;
+		/* background-color: #748386; */
+		background-color: none;
+		margin-bottom: 1px;
+		cursor: pointer;
+	}
+}
 
 /*Responsiv Code Start */
-
-@media screen and (min-width: 600px)  {
+@media screen and (min-width: 600px) {
 	#home-body {
 		grid-template-areas:
 			'header header header'
@@ -205,7 +285,7 @@ text-decoration: none;
 	#home-main {
 		grid-area: main;
 	}
-	
+
 	.meny {
 		display: flex;
 		flex-grow: 1;
@@ -214,13 +294,12 @@ text-decoration: none;
 		list-style-type: none;
 		justify-content: center;
 	}
-	.meny li a {
+	.meny a {
 		color: whitesmoke;
 		text-decoration: none;
 		margin: 10px;
 		font-size: 20px;
 		font-family: 'Cairo', sans-serif;
-
 	}
 	#navbar {
 		grid-area: nav;
@@ -232,43 +311,40 @@ text-decoration: none;
 /*Responsiv Code End */
 
 /* Galleri css Start*/
-#galleri-body{
-	background-color:black;
+#galleri-body {
+	background-color: black;
 	margin: 0;
 	font-family: Arial;
 	display: flex;
 	flex-wrap: wrap;
-    padding: 0 4px;
-
+	padding: 0 4px;
 }
-.galleri{
- 	flex: 25%;
-    max-width: 100%;
-    padding: 0 4px;	
-
+.galleri {
+	flex: 25%;
+	max-width: 100%;
+	padding: 0 4px;
 }
 
 .galleri img {
-    margin-top: 8px;
+	margin-top: 8px;
 	vertical-align: middle;
-	width:100%;
+	width: 100%;
 }
 
 @media (max-width: 750px) {
-    .galleri {
-        flex: 50%;
+	.galleri {
+		flex: 50%;
 		flex-grow: 1;
-
-    }
+	}
 }
 
 @media (max-width: 600px) {
-    .galleri {
-        max-width: 100%;
-    }
+	.galleri {
+		max-width: 100%;
+	}
 }
 
-.swipe-btn{
+.swipe-btn {
 	width: 100px;
 	height: 100px;
 	position: fixed;
@@ -278,34 +354,30 @@ text-decoration: none;
 	border: none;
 	font-size: 20px;
 	top: 0;
-
-
 }
-.swipe-btn:hover{
-background-color:#2A2623;
+.swipe-btn:hover {
+	background-color: #2a2623;
 }
 .swipe-btn i {
-	color:whitesmoke;
+	color: whitesmoke;
 	margin-top: 40px;
 	margin-left: 40px;
 }
 
-.swipe-btn:hover{
-background-color: #2A2623;
-
+.swipe-btn:hover {
+	background-color: #2a2623;
 }
-/*galleri css end */ 
+/*galleri css end */
 
 /*Start the About Css*/
-#film-body{
-	background-color: #0D1821;
+#film-body {
+	background-color: #0d1821;
 	margin: 0;
-
 }
-.container{
-	margin-top: 5rem ;
+.container {
+	margin-top: 5rem;
 }
-.container h1{
+.container h1 {
 	color: whitesmoke;
 	text-align: center;
 	font-style: italic;
@@ -317,59 +389,54 @@ background-color: #2A2623;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	justify-content: center;
 	margin-bottom: 5rem;
-
 }
 
 .container .row div {
 	margin: 0 1rem;
 	height: 250px;
-
 }
 
-.container .row div img{
+.container .row div img {
 	max-width: 100%;
 	object-fit: cover;
 	background-size: cover;
 	height: 250px;
 }
-.container .row p{
+.container .row p {
 	color: whitesmoke;
 	font-size: 10px;
 }
 
-@media screen and (max-width:600px){
-	.container{
-		margin-top: 5rem ;
+@media screen and (max-width: 600px) {
+	.container {
+		margin-top: 5rem;
 	}
-	.container h1{
+	.container h1 {
 		color: whitesmoke;
 		text-align: center;
 		font-style: italic;
 	}
-	
+
 	.container .row {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		justify-content: center;
 		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-		margin-bottom: 5rem;	
+		margin-bottom: 5rem;
 	}
-	
+
 	.container .row div {
 		margin: 0 1rem;
 		height: 100%;
-
 	}
-	
-	
-	.container .row div img{
+
+	.container .row div img {
 		max-width: 100%;
 		object-fit: cover;
 		background-size: cover;
 		height: 250px;
-		
 	}
-	.container .row p{
+	.container .row p {
 		color: whitesmoke;
 		font-size: 10px;
 	}
@@ -421,6 +488,5 @@ background-color: #2A2623;
 	font-size: 12px;
 }
 */
-
 
 /*End the About Css*/

@@ -1,289 +1,294 @@
 <!DOCTYPE html>
 <html lang="sv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Beställ biljetter" />
+		<title>Biljetter</title>
+		<link rel="stylesheet" href="./tickets.css" />
+		<link rel="stylesheet" href="../../index.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Beställ biljetter">
-    <title>Biljetter</title>
-    <link rel="stylesheet" href="./tickets.css" />
-    <link rel="stylesheet" href="../../index.css">
-</head>
+	<body>
+		<header id="header">
+			<nav id="navbar">
+				<input type="checkbox" id="checkbox-toggle" />
+				<label
+					for="checkbox-toggle"
+					id="checkbox-toggle-label"
+					style="color: white"
+					>Meny</label
+				>
+				<ul class="meny">
+					<a href="../../index.html">
+						<li>Hem</li>
+					</a>
+					<a href="../tickets/tickets.html">
+						<li>Boka biljetter</li>
+					</a>
+					<a href="../galleri/galleri.html">
+						<li>Galleri</li>
+					</a>
+					<a href="../filmer/filmer.html">
+						<li>Filmer</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
 
-<body>
-    <header id="header">
-        <nav id="navbar">
-            <ul class="meny">
-                <li>
-                    <a href="../../index.html">Hem</a>
-                </li>
-                <li>
-                    <a href="../tickets/tickets.html">Boka biljetter</a>
-                </li>
-                <li>
-                    <a href="../galleri/galleri.html">Galleri</a>
-                </li>
-                <li>
-                    <a href="../filmer/filmer.html">Filmer</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="tickets-main">
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 1</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 2</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 3</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 4</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 5</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 1</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 2</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 3</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 4</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 5</p>
-                <button>Boka</button>
-            </div>
-        </div>
-        <div class="seat">
-            <div class="seat-info">
-                <p>Rad: 6</p>
-                <p>Säte: 6</p>
-                <button>Boka</button>
-            </div>
-        </div>
-    </main>
-</body>
-
+		<main id="tickets-main">
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 1</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 2</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 3</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 4</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 5</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 1</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 2</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 3</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 4</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 5</p>
+					<button>Boka</button>
+				</div>
+			</div>
+			<div class="seat">
+				<div class="seat-info">
+					<p>Rad: 6</p>
+					<p>Säte: 6</p>
+					<button>Boka</button>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>

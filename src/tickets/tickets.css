@@ -11,6 +11,18 @@ body {
 	grid-template-rows: 0.2fr 1fr 0.1fr;
 	background-color: #0d1821;
 }
+
+/* Navbar fullsize start */
+@media screen and (min-width: 600px) {
+	/* #checkbox-toggle {
+		display: none;
+	}
+	#checkbox-toggle-label {
+		display: none;
+	} */
+}
+/* Navbar fullsize end */
+
 /* Styr main-elementet */
 #tickets-main {
 	grid-area: main;

@@ -11,7 +11,7 @@ body {
 }
 
 
-	#ticketsMain {
+	#tickets-main {
 		grid-area: main;
     display: grid;
     padding: 2%;
@@ -19,7 +19,7 @@ body {
     gap: 2px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: #D6D6D6;
+    background-color: #0D1821;
   }
   
   .seat {
@@ -27,17 +27,17 @@ body {
     display: inline-grid;
     border-radius: 5px;
   }
-  .seat:hover .seatInfo{
+  .seat:hover .seat-info{
     display: unset;
   }
 
-  .seatInfo {
+  .seat-info {
     display: none;
     font-size: 0.65rem;
     color: #D6D6D6;
     text-align: center;
   }
-  .seatInfo button {
+  .seat-info button {
     align-self: center;
     border: none;
     border-radius: 4px;

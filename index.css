@@ -248,8 +248,7 @@
 	}
 	.meny li {
 		padding: 15px;
-		/* background-color: #748386; */
-		background-color: none;
+		background-color: #748386;
 		margin-bottom: 1px;
 		cursor: pointer;
 	}

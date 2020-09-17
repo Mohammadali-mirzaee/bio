@@ -1,6 +1,3 @@
-input[type='checkbox'] {
-	display: none;
-}
 #home-body {
 	height: 100vh;
 	display: grid;
@@ -93,7 +90,6 @@ input[type='checkbox'] {
 	}
 
 	/* Ändrar label så den ser ut som en knapp */
-
 	label {
 		box-sizing: border-box;
 		display: inline-block;
@@ -105,8 +101,8 @@ input[type='checkbox'] {
 		text-align: center;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	}
-	
-	ul {
+
+	.meny {
 		position: absolute;
 		list-style: none;
 		text-align: left;
@@ -118,19 +114,19 @@ input[type='checkbox'] {
 		display: none;
 	}
 
-	ul li {
+	.meny li {
 		padding: 15px;
 		background-color: #748386;
 		margin-bottom: 1px;
 		cursor: pointer;
 	}
 
-	ul li:hover {
+	.meny a li:hover {
 		background-color: #4fb9a7;
 		color: #fff;
 	}
 
-	ul a {
+	.meny a {
 		color: #fff;
 		text-decoration: none;
 	}
@@ -250,7 +246,7 @@ input[type='checkbox'] {
 	#checkbox-toggle-label {
 		display: none;
 	}
-	ul li {
+	.meny li {
 		padding: 15px;
 		/* background-color: #748386; */
 		background-color: none;
@@ -404,6 +400,13 @@ input[type='checkbox'] {
 	font-size: 10px;
 }
 
+/* Navbar om skärmen är breade än 600px */
+@media screen and (min-width: 600px) {
+	input[type='checkbox'] {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.container {
 		margin-top: 5rem;
@@ -438,52 +441,3 @@ input[type='checkbox'] {
 		font-size: 10px;
 	}
 }
-/*
-
-.contain-info{
-	background-color: #ccc;
-	width: 200px;
-	margin: 10%;
-	height: 200px;
-	text-align: center;
-}
-.profile-left{
-	height: 80px;
-	width: 80px;
-	border-radius: 25%;
-	align-items: center;
-	margin: auto;
-	background-image: url(src/images/profile/profile1.png);
-	background-position: center;
-	background-size: cover;
-}
-.profile-center{
-	height: 80px;
-	width: 80px;
-	border-radius: 25%;
-	align-items: center;
-	margin: auto;
-	background-image: url(src/images/profile/profile2.png);
-	background-position: center;
-	background-size: cover;
-}
-.profile-right{
-	height: 80px;
-	width: 80px;
-	border-radius: 25%;
-	align-items: center;
-	margin: auto;
-	background-image: url(src/images/profile/profile3.jpg);
-	background-position: center;
-	background-size: cover;
-}
-.form-about{
-	background-color: #0D1821;
-	
-}
-.about-text{
-	font-size: 12px;
-}
-*/
-
-/*End the About Css*/

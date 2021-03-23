@@ -1,3 +1,3 @@
 # Html and Css Project 
 #Demo
-https://thirsty-khorana-d91c9d.netlify.app
+https://elastic-mirzakhani-30574d.netlify.app
